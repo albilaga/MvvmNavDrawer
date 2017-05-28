@@ -1,4 +1,4 @@
-﻿using MvvmCross.Platform.IoC;
+﻿using MvvmNavDrawer.Core.ViewModels;
 
 namespace MvvmNavDrawer.Core
 {
@@ -6,12 +6,9 @@ namespace MvvmNavDrawer.Core
     {
         public override void Initialize()
         {
-            CreatableTypes()
-                .EndingWith("Service")
-                .AsInterfaces()
-                .RegisterAsLazySingleton();
+            base.Initialize();
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<LoginViewModel>();
         }
     }
 }
