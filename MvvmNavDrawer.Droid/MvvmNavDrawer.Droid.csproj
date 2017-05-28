@@ -133,6 +133,12 @@
     <Folder Include="Resources\drawable-mdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Activities\">
+      <DependentUpon>Activities</DependentUpon>
+    </Folder>
+    <Folder Include="Views\">
+      <DependentUpon>Views</DependentUpon>
+    </Folder>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\splash.png" />
@@ -141,7 +147,6 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\layout\FirstView.axml" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\layout\toolbar.axml" />
     <AndroidResource Include="Resources\values\arrays.xml" />
@@ -152,6 +157,11 @@
     <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="Resources\layout\MainView.axml" />
+    <AndroidResource Include="Resources\layout\FragmentView.axml" />
+    <AndroidResource Include="Resources\layout\fragment_menu.axml" />
+    <AndroidResource Include="Resources\layout\item_menu.axml" />
+    <AndroidResource Include="Resources\layout\LoginView.axml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -164,9 +174,13 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\FirstView.cs" />
-    <Compile Include="Views\BaseView.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Views\SavedJourneysFragment.cs" />
+    <Compile Include="Views\SearchJourneyFragment.cs" />
+    <Compile Include="Views\SettingsFragment.cs" />
+    <Compile Include="Views\MenuFragment.cs" />
+    <Compile Include="Activities\LoginActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />

@@ -45,10 +45,25 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\FirstViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Commons\MenuOption.cs" />
+    <Compile Include="ViewModels\SearchJourneyViewModel.cs" />
+    <Compile Include="ViewModels\SavedJourneysViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\">
+      <DependentUpon>Models</DependentUpon>
+    </Folder>
+    <Folder Include="Commons\">
+      <DependentUpon>Commons</DependentUpon>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
