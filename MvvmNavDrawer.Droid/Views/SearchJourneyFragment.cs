@@ -8,7 +8,7 @@ using MvvmNavDrawer.Core.ViewModels;
 
 namespace MvvmNavDrawer.Droid.Views
 {
-    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
+    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register("mvvmnavdrawer.droid.views.SearchJourneyFragment")]
     public class SearchJourneyFragment : MvxFragment<SearchJourneyViewModel>
     {

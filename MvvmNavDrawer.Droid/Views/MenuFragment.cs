@@ -10,7 +10,7 @@ using MvvmNavDrawer.Droid.Activities;
 
 namespace MvvmNavDrawer.Droid.Views
 {
-    [MvxFragment(typeof(MainViewModel), Resource.Id.left_drawer, true)]
+    [MvxFragment(typeof(MainViewModel), Resource.Id.left_drawer)]
     [Register("mvvmnavdrawer.droid.views.MenuFragment")]
     public class MenuFragment : MvxFragment<MenuViewModel>
     {
